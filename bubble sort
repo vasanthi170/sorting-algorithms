@@ -1,0 +1,7 @@
+#Bubble sort
+l = [23,15,28,41,65,12]
+for v1 in range(len(l)-1):
+    for v2 in range(len(l)-1-v1):
+        if l[v2] > l[v2+1]:
+            l[v2],l[v2+1] = l[v2+1],l[v2]
+print(l)
