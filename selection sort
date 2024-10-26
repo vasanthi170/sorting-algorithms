@@ -1,0 +1,9 @@
+#selection sort
+l = [10,3,9,7,2,4]
+for ind1 in range(len(l)-1):
+    val = ind1
+    for ind2 in range(ind1+1,len(l)):
+        if l[val] > l[ind2]:
+            val = ind2
+    l[ind1],l[val] = l[val],l[ind1]
+print(l)
